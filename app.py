@@ -107,10 +107,10 @@ def train_xgb(df_key, features, df):
 
 @st.cache_resource(show_spinner="Training LSTM model (this takes ~3 min)...")
 def train_lstm(df_key, df):
-    import tensorflow as tf
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import LSTM, Dense, Dropout
-    from tensorflow.keras.callbacks import EarlyStopping
+    import keras
+    from keras.models import Sequential
+    from keras.layers import LSTM, Dense, Dropout
+    from keras.callbacks import EarlyStopping
 
     features = FEATURES_BASE
     scaler_X = MinMaxScaler()
@@ -149,7 +149,6 @@ def train_lstm(df_key, df):
     rmse = np.sqrt(np.mean((actual - pred) ** 2))
 
     return model, scaler_X, scaler_y, round(mape, 2), round(rmse, 0)
-
 
 # ── Sidebar ───────────────────────────────────────────────────
 with st.sidebar:
@@ -515,3 +514,4 @@ with tab3:
       Ontario Tech University.
     - Winner, L. (1980). Do artifacts have politics? *Daedalus, 109*(1), 121–136.
     """)
+
