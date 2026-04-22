@@ -11,7 +11,7 @@
 **Ontario Tech University · Winter 2026**
 *Nan Chen · Student ID: 101021912*
 
-**Live App:** [crypto-aml-dashboard.streamlit.app](https://chennan7909-cmd-crypto-aml-risk-dashboard-app.streamlit.app)
+**Live App:** [crypto-aml-dashboard.streamlit.app](https://crypto-aml-dashboard.streamlit.app)
 
 </div>
 
